@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: article-service
+
+  profiles:
+    active: dev
+
+  cloud:
+    nacos:
+      config:
+        file-extension: YAML
+        server-addr: 10.0.4.3:8848
+        shared-configs:
+          - data-id: redis-config.YAML
+            refresh: true
+          - data-id: mybatis-dev.YAML
+            refresh: true
+          - data-id: datasource-config.YAML
+            refresh: true
+          - data-id: nacos-register.YAML
+            refresh: true
+
+feign:
+  client:
+    config:
+      user-service:
+        loggerLevel: full

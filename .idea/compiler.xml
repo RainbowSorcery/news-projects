@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="news-api" />
+        <module name="news-service-api" />
+        <module name="news-article" />
+        <module name="news-admin" />
+        <module name="news-service-user" />
+        <module name="news-code-generator" />
+        <module name="news-common" />
+        <module name="news-model" />
+        <module name="gateway" />
+        <module name="news-service-file" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bews-service-user" target="11" />
+      <module name="news-gateway" target="11" />
+      <module name="news-register" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bews-service-user" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="imooc-news" options="" />
+      <module name="news-admin" options="-parameters" />
+      <module name="news-api" options="-parameters" />
+      <module name="news-article" options="-parameters" />
+      <module name="news-code-generator" options="-parameters" />
+      <module name="news-common" options="-parameters" />
+      <module name="news-gateway" options="-parameters" />
+      <module name="news-model" options="-parameters" />
+      <module name="news-register" options="-parameters" />
+      <module name="news-service-api" options="-parameters" />
+      <module name="news-service-file" options="-parameters" />
+      <module name="news-service-user" options="-parameters" />
+    </option>
+  </component>
+</project>

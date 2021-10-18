@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: feign-client-service
+  cloud:
+    nacos:
+      config:
+        file-extension: YAML
+        shared-configs:
+          -
+            data-id: datasource-config.YAML
+            refresh: true
+          - data-id: redis-config.YAML
+            refresh: true
+          - data-id: mongodb-config.YAML
+            refresh: true
+          - data-id: nacos-register.YAML
+            refresh: true
+        server-addr: 10.0.4.3:8848

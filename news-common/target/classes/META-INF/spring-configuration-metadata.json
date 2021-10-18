@@ -1,0 +1,72 @@
+{
+  "groups": [
+    {
+      "name": "aliyun",
+      "type": "com.lyra.utils.extend.AliyunResources",
+      "sourceType": "com.lyra.utils.extend.AliyunResources"
+    },
+    {
+      "name": "aliyun.oss",
+      "type": "com.lyra.utils.extend.AliyunOSSResources",
+      "sourceType": "com.lyra.utils.extend.AliyunOSSResources"
+    },
+    {
+      "name": "min.io",
+      "type": "com.lyra.utils.extend.MinioResources",
+      "sourceType": "com.lyra.utils.extend.MinioResources"
+    }
+  ],
+  "properties": [
+    {
+      "name": "aliyun.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.AliyunResources"
+    },
+    {
+      "name": "aliyun.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.AliyunResources"
+    },
+    {
+      "name": "aliyun.oss.bucket",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.AliyunOSSResources"
+    },
+    {
+      "name": "aliyun.oss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.AliyunOSSResources"
+    },
+    {
+      "name": "aliyun.oss.host",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.AliyunOSSResources"
+    },
+    {
+      "name": "aliyun.oss.objectname",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.AliyunOSSResources"
+    },
+    {
+      "name": "min.io.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.MinioResources"
+    },
+    {
+      "name": "min.io.bucket",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.MinioResources"
+    },
+    {
+      "name": "min.io.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.MinioResources"
+    },
+    {
+      "name": "min.io.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.lyra.utils.extend.MinioResources"
+    }
+  ],
+  "hints": []
+}

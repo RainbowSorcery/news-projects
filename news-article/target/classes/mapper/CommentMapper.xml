@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lyra.article.mapper.CommentCustomMapper">
+    <select id="queryCommentVo" parameterType="string" resultType="com.lyra.pojo.vo.CommentVO" >
+        SELECT
+            c.id as commentId,
+            c.father_id as fatherId,
+            c.comment_user_id as commentUserId,
+            c.comment_user_nickname as commentUserNickname,
+            c.article_id as articleId,
+            c.content as content,
+            c.create_time as createTime,
+            c2.comment_user_nickname as quoteUserNickname,
+            c2.content as quoteContent,
+            c.comment_user_face as commentUserFace
+        FROM
+            comments c
+                left join
+            comments c2
+            on
+                c2.father_id = c.id
+        WHERE
+            c.article_id = #{articleId}
+        order BY
+            c.create_time desc
+    </select>
+</mapper>
